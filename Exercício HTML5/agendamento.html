@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamentos</title>
+</head>
+
+<body>
+    <header>
+        <h1>
+            Agendamentos
+        </h1>
+    </header>
+
+    <main>
+        <form>
+            <h2>Dados do responsável</h2>
+            <p>
+                <label for="nome">Nome do responsável:</label>
+                <br>
+                <input type="text" name="nome" id="nome" minlength="3" maxlength="100" required>
+            </p>
+
+            <p>
+                <label for="email">Email:</label>
+                <br>
+                <input type="email" name="email" id="email" required>
+            </p>
+
+            <p>
+                <label for="telefone">Telefone:</label>
+                <br>
+                <input type="tel" name="telefone" id="telefone" placeholder="(47) 996789274" required>
+            </p>
+
+            <h2>Informações do animal</h2>
+            <p>
+                <label for="nome">Nome do Pet:</label>
+                <br>
+                <input type="text" name="nome" id="nome" minlength="3" maxlength="100" required>
+            </p>
+
+            <p>
+                <label for="especie">Espécie:</label>
+                <select id="especie" name="especie">
+                    <option>Cachorro</option>
+                    <option>Gato</option>
+                    <option>Outros</option>
+                </select>
+            </p>
+
+            <p>
+            <h3>Porte</h3>
+            <!--O type-"radio" serve para que o usuario possa escolher apenas um item, mas depende do js para funcionar corretamente-->
+            <label for="pequeno">Pequeno</label>
+            <input type="radio" name="pequeno" id="pequeno" value="pequeno">
+            <br>
+
+            <label for="medio">Médio</label>
+            <input type="radio" name="medio" id="medio" value="medio">
+            <br>
+
+            <label for="grande">Grande</label>
+            <input type="radio" name="grande" id="grande" value="grande">
+            </p>
+
+
+            <p>
+            <h2>Serviços desejados </h2>
+            <!--Diferente do radio, o "checkbox" permite o usiario escolher mais de um item,
+             nesse caso sendo fundamental para que o serviço seja destinha ao porte correto do animal, para que nao haja surpresas na hora do atendimento-->
+            <label>Banho</label>
+            <input type="checkbox" value="Banho">
+            <br>
+            <label>Tosa</label>
+            <input type="checkbox" value="Tosa">
+            <br>
+            <label>Cortes de unhas</label>
+            <input type="checkbox" value="Cortes de Unhas">
+            <br>
+            <label>Hidratação</label>
+            <input type="checkbox" value="Hidratação">
+            </p>
+
+            <p>
+                <label for="data">Data</label>
+                <br>
+                <input type="date" name="data" id="data">
+                <br>
+                <label for="time">Horário</label>
+                <br>
+                <input type="time" name="time" id="time">
+            </p>
+
+
+            <p>
+                <label>Observação:</label>
+                <br>
+                <textarea placeholder="Observação" maxlength="300"></textarea>
+            </p>
+
+
+
+
+            <button>Enviar</button>
+            <button>Reset</button>
+            <nav>
+                <a href="./index1.html">Início</a>
+            </nav>
+        </form>
+    </main>
+</body>
+
+</html>
